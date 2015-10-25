@@ -1,1 +1,1 @@
-Setup for [http://stackoverflow.com/a/33229581/1497139](cmd-home-user-script-sh-in-docker-file-doesnt-work-with-docker-compose)
+Setup for [cmd-home-user-script-sh-in-docker-file-doesnt-work-with-docker-compose](http://stackoverflow.com/a/33229581/1497139)
