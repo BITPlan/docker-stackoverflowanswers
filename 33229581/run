@@ -1,0 +1,3 @@
+#!/bin/bash
+#docker-compose run -d -e MYSQL_ROOT_PASSWORD=test db
+docker-compose run web

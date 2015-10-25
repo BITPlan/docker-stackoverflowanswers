@@ -1,0 +1,31 @@
+head	1.1;
+access;
+symbols;
+locks
+	wf:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2015.10.20.06.03.43;	author wf;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@web:
+  build: .
+  ports:
+   - "8888:8888"
+  links:
+   - db
+db:
+  image: mysql@

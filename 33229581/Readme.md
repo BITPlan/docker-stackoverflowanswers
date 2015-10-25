@@ -1,0 +1,1 @@
+Setup for http:/cmd-home-user-script-sh-in-docker-file-doesnt-work-with-docker-compose/stackoverflow.com/a/33229581/1497139
