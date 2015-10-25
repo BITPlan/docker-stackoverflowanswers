@@ -1,0 +1,25 @@
+/L20"Docker" Line Comment = #  Escape Char = \ String Chars = "' File Names = Dockerfile
+/Delimiters = ~!@$%^*()+=/\[]{}:;"<>'�` ,   .?
+/Indent Strings = "{("
+/Unindent Strings = "})"
+/Function String = "%[a-zA-Z_]*("
+/C1
+ADD
+CMD
+ENTRYPOINT
+ENV
+EXPOSE
+FROM
+MAINTAINER
+RUN
+USER
+LABEL
+VOLUME
+WORKDIR
+COPY
+STOPSIGNAL
+/C2
+/C3
+]
+[
+/C4
