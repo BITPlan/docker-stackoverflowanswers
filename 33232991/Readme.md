@@ -1,0 +1,1 @@
+Setup for http://stackoverflow.com/questions/33210678/docker-mount-directory-from-one-container-to-another/33232991#33232991

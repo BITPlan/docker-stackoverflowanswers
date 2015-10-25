@@ -1,0 +1,3 @@
+#!/bin/bash
+docker build -t bitplan/dataonly:0.0.1 -f Dockerfile.data . 
+docker build -t bitplan/dataexample:0.0.1 .

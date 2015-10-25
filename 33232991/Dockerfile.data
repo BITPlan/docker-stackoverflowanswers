@@ -1,0 +1,8 @@
+# Dockerfile that modifies ubuntu to create a data volume container
+FROM ubuntu:14.04
+RUN mkdir -p /var/www/html
+RUN echo "This is the content for file1.html" > /var/www/html/file1.html
+RUN echo "This is the content for file2.html" > /var/www/html/file2.html
+RUN echo "This is the content for index.html" > /var/www/html/index.html
+VOLUME /var/www/html
+ENTRYPOINT /usr/bin/tail -f /dev/null
