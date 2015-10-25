@@ -1,0 +1,3 @@
+#!/bin/bash
+# 2015-10-25
+docker run -it bitplan/ubuntutest:0.1 /bin/bash -c "service --status-all"
