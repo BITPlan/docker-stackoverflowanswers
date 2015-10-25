@@ -1,0 +1,4 @@
+#!/bin/bash
+# http://stackoverflow.com/questions/33324470/java-version-updated-on-package-installation
+# WF 2015-10-25
+docker run -it stackoverflow/33324470:0.1 /bin/bash
