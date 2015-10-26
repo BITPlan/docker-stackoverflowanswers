@@ -1,0 +1,44 @@
+#!/bin/bash
+# WF 2015-10-26
+#
+# show usage
+#
+usage() {
+  echo "usage: build"
+	# -h|--help|usage|show this usage
+	echo "  -h|--help: show this usage"
+	echo "  -v|--version [version]: build the given version"
+  exit 1
+}
+
+#
+# parameterized dockerfile
+#
+dockerfile() {
+  local l_version="$1"
+cat << EOF > Dockerfile
+FROM centos:$l_version
+EOF
+}
+#start of script
+# check arguments
+if [ $# -lt 1 ]
+then
+  usage
+fi
+while test $# -gt 0
+do
+  case $1 in
+    # -h|--help|usage|show this usage
+    -h|--help) usage;;
+    # -d|--debug|debug|switch on java debugging
+    -v|--version) 
+		   shift
+			 version="$1"
+			 dockerfile $version
+			 docker build .
+			 ;;
+		*) usage ;;
+  esac
+  shift
+done
