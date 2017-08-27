@@ -24,6 +24,7 @@ do
     dosql "$sql" mysql
   done
 done
+mysql_upgrade --password="$rootpass"
 # kill daemon
 echo "killing mysql daemon"
 pkill -f mysqld
@@ -31,3 +32,4 @@ sleep 3
 echo "starting mysql daemon via service"
 service mysql start
 grep ERROR error.log
+exit 0

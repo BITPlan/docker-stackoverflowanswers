@@ -21,3 +21,4 @@ RUN mkdir /var/run/mysqld;chown mysql.mysql /var/run/mysqld
 
 WORKDIR /var/log/mysql
 COPY mysqltest.sh .
+RUN  sh mysqltest.sh

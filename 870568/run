@@ -4,5 +4,5 @@ docker build . | tee $buildresult
 imageid=$(grep Succ $buildresult|cut -f3 -d " ")
 if [ $? -eq 0 ]
 then
-  docker run -it $imageid
+  docker run -it $imageid /bin/bash
 fi
