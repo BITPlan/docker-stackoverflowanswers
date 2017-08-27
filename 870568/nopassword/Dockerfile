@@ -12,12 +12,11 @@ FROM ubuntu:16.04
 # 
 MAINTAINER Wolfgang Fahl info@bitplan.com
 
+# install mysql server with no password and run mysql upgrade immediately
 RUN \
  export DEBIAN_FRONTEND=noninteractive;apt-get update -y && apt-get install -y \
-        vim \
-	mysql-server 
-
-RUN mkdir /var/run/mysqld;chown mysql.mysql /var/run/mysqld
-
-WORKDIR /var/log/mysql
-COPY mysqltest.sh .
+	vim \
+	mysql-server; \
+ mkdir /var/run/mysqld;chown mysql /var/run/mysqld; \
+ service mysql start; \
+ mysql_upgrade
